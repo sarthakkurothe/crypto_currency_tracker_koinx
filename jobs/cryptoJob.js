@@ -30,6 +30,6 @@ const fetchCryptoData = async () => {
     }
 };
 
-cron.schedule('* * * * *', fetchCryptoData); // Every minute
+cron.schedule('0 */2 * * *', fetchCryptoData); // For 2 hour job-service
 
 module.exports = fetchCryptoData;
